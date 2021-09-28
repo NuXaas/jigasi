@@ -8,3 +8,6 @@ dist
 jigasi.iml
 
 target
+
+.metadata/
+jdt.ls-java-project/

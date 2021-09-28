@@ -103,10 +103,8 @@ public class TranscriptionGateway
             }
         }
 
-        if (service == null)
-        {
-            service = new GoogleCloudTranscriptionService();
-        }
+        // WARN :: removed default google service
+        assert service != null;
 
         TranscriptionGatewaySession outgoingSession =
                 new TranscriptionGatewaySession(
